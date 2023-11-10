@@ -1,0 +1,237 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="moon"><a href="javascript: switchMode()"><ion-icon id="moon_icon" name="moon"></ion-icon></a></div>
+        <!-- Noticias -->
+        <div class="content screen hidden show" style="display: flex;">
+            <div class="label">
+                 Tablón 1
+                 <div class="label new">noticia </div>
+                 <div class="label new">noticia </div>
+            </div>
+            <div class="label">
+                Tablón 2
+                <div class="label new">noticia </div>
+                <div class="label new">noticia </div>
+            </div>
+            <div class="title">tablón de noticias</div>
+            <div class="settings hover"> <ion-icon name="cog-outline"></ion-icon></div>
+        </div>
+
+        <!-- Entrenamiento -->
+        <div class="content screen hidden" id="entrenamiento">
+            <div class="label_grid"><span class="center"><i class="fa-solid fa-carrot"></i> dietas IA</span></div>
+            <div class="label_grid transparent" style="outline-style: solid; grid-row: span 2; width: 60%;margin-left: auto;margin-right: auto;"> 
+                <span class="center">_ horas esta semana </span> 
+                <div class="label_grid transparent" style="height: 60%; width: 90%; font-size: 1em; text-align: center;"> gráfico <br>horas por día</div> 
+            </div>
+            <div class="label_grid"><span class="center"><i class="fa-solid fa-dumbbell"></i> rutinas IA</span></div>
+            <div class="label_grid transparent" style="grid-column: span 2; width:auto; height: auto;"> 
+                Rutinas personalizadas
+                <div class="" style="display: flex; flex-direction: row; justify-content: space-evenly; width: 100%; height: 70%;">
+                    <div class="label_grid transparent" style="width: 15%; top: 10%; height: 80%; font-size: 0.8em; text-align: center;"> <b>Día de piernas</b><br> 6 ejercicios</div>
+                    <div class="label_grid transparent" style="width: 15%; top: 10%; height: 80%; font-size: 0.8em; text-align: center;"><b>Bíceps-Espalda </b><br> 7 ejercicios</div>
+                    <div class="label_grid transparent" style="width: 15%; top: 10%; height: 80%; background-color: var(--primary-clr); text-align: center; font-size: 3em; color: var(--secondary-clr);">+</div>
+                    <div class="label_grid transparent" style="width: 15%; top: 10%; height: 80%; box-shadow: none; outline: none"></div>
+                    <div class="label_grid transparent" style="width: 15%; top: 10%; height: 80%; box-shadow: none; outline: none;"></div>
+                </div>
+            </div>
+            <div class="title grid">entrenamiento</div>
+            <div class="settings hover"> <ion-icon name="eye-outline"></ion-icon></div>
+        </div>
+
+        <!-- Clases -->
+        <div class="content screen hidden" id="clases">
+            <div class="label_grid" style="font-size: 1em"> <span style="font-size: 2em;"><b> sesión de hiit</b></span> <span style="width: 80%; text-align: left;"> 15/5 <br> 16:00 <br> (entrenador/a) <br> (descripción) </span> <div class="label_grid transparent" style="background-color: var(--secondary-clr); width: 80%; height: 15%; cursor: pointer;"> ¡apúntame!</div> </div>
+            <div class="label_grid"><span class="center" style="font-size: 0.5em;">semanal/mensual<ion-icon name="caret-down-outline"></ion-icon> </span> <div class="label_grid transparent" style="height: 80%; background-color: var(--secondary-clr); width: 90%; font-size: 0.7em; text-align: center;"> horario de <br>clases</div></div>
+            <div class="label_grid transparent" style="grid-column: span 2; height: 95%; outline-style: solid;">
+                Clases grabadas
+                <div class="" style="display: flex; flex-direction: row; justify-content: space-evenly; width: 100%; height: 70%; ">
+                    <div class="label_grid transparent" style="width: 15%; top: 10%; height: 80%; font-size: 0.7em; text-align: center; outline-style: solid;"> <b>11/5</b> Yoga <br> (entrenador/a)</div>
+                    <div class="label_grid transparent" style="width: 15%; top: 10%; height: 80%; font-size: 0.7em; text-align: center; outline-style: solid;"><b>11/5</b> Pilates <br> (entrenador/a)</div>
+                    <div class="label_grid transparent" style="width: 15%; top: 10%; height: 80%; font-size: 0.7em; text-align: center; outline-style: solid;"> <b>10/5</b> Meditación <br> (entrenador/a)</div>
+                    <div class="label_grid transparent" style="width: 15%; top: 10%; height: 80%; font-size: 0.7em; text-align: center; outline-style: solid;"><b>10/5</b> Spinning <br> guardiola</div>
+                    <div class="label_grid transparent" style="width: 15%; top: 10%; height: 80%; font-size: 0.7em; text-align: center; outline-style: solid;"> <b>10/5</b> Yoga <br> mourinho</div> 
+                </div>
+            </div>
+            <div class="title grid">clases</div>
+            <div class="settings" style="border: none; border-radius: 0;"> <i class="fa-solid fa-filter"></i></div>
+        </div>
+
+        <!-- Perfil -->
+        <div class="content screen hidden" id="perfil">
+            <div class="label_grid" style="flex-direction: row; width: 100%;">
+                <span style="position: absolute; left: 2.5%; font-size: 2.5em;"><ion-icon name="person-circle-outline"></ion-icon></span>
+                <div class="label_grid transparent" style="position: absolute; width: 80%; right: 2.5%; font-size: 0.75em"> datos personales </div>
+            </div>
+            <div class="label_grid">
+                <span style="width: 90%; font-size: 0.5em; text-align: left;"><ion-icon name="search-outline"></ion-icon> buscar personas</span> 
+                <div class="label_grid transparent" style="height: 80%; width: 90%; font-size: 0.7em; text-align: center; outline-style: solid;"> 
+                    <div class = "label_grid transparent" style="width: 90%; height: 20%; outline-style: solid;">
+                        <span style="position: absolute; left: .5%; font-size: 1.25em;"><ion-icon name="person-circle-outline"></ion-icon></span>
+                        <span style="width: 75%; font-size: .3em; position: absolute; text-align: left; top: 10%"> <span style="padding-right: 10%;"> (nombre) </span> (último entreno)</span><br>
+                        <span style="width: 75%; font-size: .3em; position: absolute; text-align: left; bottom: 10%;"> (descripción)</span>
+                        <span style="position: absolute; right: 1%; font-size: 1em;"><ion-icon name="ellipsis-vertical-outline"></ion-icon></span>
+                    </div>
+                    <div class = "label_grid transparent" style="width: 90%; height: 20%; outline-style: solid;">
+                        <span style="position: absolute; left: .5%; font-size: 1.25em;"><ion-icon name="person-circle-outline"></ion-icon></span>
+                        <span style="width: 75%; font-size: .3em; position: absolute; text-align: left; top: 10%"> <span style="padding-right: 10%;"> (nombre) </span> (último entreno)</span><br>
+                        <span style="width: 75%; font-size: .3em; position: absolute; text-align: left; bottom: 10%;"> (descripción)</span>
+                        <span style="position: absolute; right: 1%; font-size: 1em;"><ion-icon name="ellipsis-vertical-outline"></ion-icon></span>
+                    </div>
+                    <div class = "label_grid transparent" style="width: 90%; height: 20%; outline-style: solid;">
+                        <span style="position: absolute; left: .5%; font-size: 1.25em;"><ion-icon name="person-circle-outline"></ion-icon></span>
+                        <span style="width: 75%; font-size: .3em; position: absolute; text-align: left; top: 10%"> <span style="padding-right: 10%;"> (nombre) </span> (último entreno)</span><br>
+                        <span style="width: 75%; font-size: .3em; position: absolute; text-align: left; bottom: 10%;"> (descripción)</span>
+                        <span style="position: absolute; right: 1%; font-size: 1em;"><ion-icon name="ellipsis-vertical-outline"></ion-icon></span>
+                    </div>
+                    <div class = "label_grid" style="width: 90%; height: 20%">
+                    </div>
+                </div>
+            </div>
+            <div class="title grid">perfil</div>
+            <div class="settings hover" style="font-size: 3.5em"> <ion-icon name="share-social-outline"></ion-icon></div>
+        </div>
+
+        <!-- Configuración -->
+        <div class="content screen hidden" id="configuracion">
+            <div class="label_grid">
+                <div class="label_grid transparent" style="height: 95%; width: 90%; font-size: 0.7em; text-align: center; outline-style: solid;"> 
+                    <div style="width: 80%;">
+                        <b>Lenguaje</b>
+                        <div style="display: flex; flex-direction: row; justify-content: space-between; width: 100%;"> 
+                            <span style="font-size: 0.7em;">cambiar idioma</span>
+                            <div class="label_grid" style="height: auto; width: 30%; font-size: 0.49em; flex-direction: row;">Español <ion-icon name="caret-down-outline"></ion-icon></div>
+                        </div>
+                    </div>
+                    <div style="width: 80%;">
+                        <b>suscripción</b>
+                        <div style="display: flex; flex-direction: row; justify-content: space-between; width: 100%;"> 
+                            <div class="label_grid" style="height: auto; width: 30%; font-size: 0.49em; flex-direction: row;">Gestiona tu suscripción </div>
+                            <div class="label_grid" style="height: auto; width: 30%; font-size: 0.49em; flex-direction: row;">Gestiona tus métodos de pago </div>
+                        </div>
+                    </div>
+                    <div style="width: 80%;">
+                        <b>Ayuda</b>
+                        <div style="display: flex; flex-direction: column; align-items: center;"> 
+                            <div style="display: flex; flex-direction: row; justify-content: space-between; width: 100%;">
+                                <div class="label_grid" style="height: auto; width: 30%; font-size: 0.49em; flex-direction: row;">Preguntas frecuentes </div>
+                                <div class="label_grid" style="height: auto; width: 30%; font-size: 0.49em; flex-direction: row;">Contacta con nosotros </div> 
+                            </div>
+                            <div class="label_grid" style="height: auto; width: 30%; font-size: 0.49em; flex-direction: row;"> chatea con  <br>la ia </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="title grid">Configuración</div>
+            <div class="settings" style="font-size: 3.5em; border:none"> <ion-icon name="exit-outline"></ion-icon></div>
+        </div>
+
+        <!-- Navigation bar -->
+        <div class="navigation">
+            <ul>
+                <li class="active">
+                    <a href="#">
+                        <span class="icon"> <ion-icon name="newspaper-outline"></ion-icon></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"> <ion-icon name="barbell-outline"></ion-icon></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"> <ion-icon name="today-outline"></ion-icon></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"> <ion-icon name="person-circle-outline"></ion-icon></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="settings-outline"></ion-icon> </span>
+                    </a>
+                </li>
+                <div class="indicator"> <span></span></div>
+            </ul>
+        </div>
+        <script>
+            let list = Array.prototype.slice.call(document.querySelectorAll('.navigation li'));
+            let screens = Array.prototype.slice.call(document.querySelectorAll('.screen'));
+            let body = document.body
+            let previous = 0
+            let activated = true
+
+            function activeLink() {
+                if (activated) {
+                    let thisIndex =list.findIndex((element) => element == this)
+                    changeScreens(previous, thisIndex)
+                    list.forEach((item) => item.classList.remove('active'));
+                    this.classList.add('active')
+                    previous = thisIndex
+                }
+            }
+            function changeScreens(origin, destination) {
+                if (origin < destination) {
+                    activated = false
+                    for (let i = origin + 1; i < destination; i++) {
+                        screens[i].classList.add('gone')
+                        screens[i].classList.add('show')
+                    }      
+                    screens[origin].classList.add('gone')
+                    setTimeout(() => {
+                        screens[origin].style.display = "none";
+                        activated = true
+                    }, 1000); 
+
+                    screens[destination].style.display = displays(destination)
+                    setTimeout(() => {
+                        screens[destination].classList.add('show')
+                    }, 600)
+                } else if (destination < origin) {
+                    activated = false
+                    for (let i = destination + 1; i < origin; i++) {
+                        screens[i].classList.remove('show')
+                        screens[i].classList.remove('gone')
+                    }      
+                    screens[origin].classList.remove('show')
+                    setTimeout(() => {
+                        screens[origin].style.display = "none";
+                        activated = true
+                    }, 1000); 
+
+                    screens[destination].style.display = displays(destination)
+                    setTimeout(() => {
+                        screens[destination].classList.remove('gone')
+                    }, 600)
+                }
+                
+            }
+            function displays(n) {
+                if (n == 0)
+                    return "flex"
+                return "grid"
+            }
+            list.forEach((item) => item.addEventListener('click', activeLink))
+
+            function switchMode() {
+                if (body.style.getPropertyValue('--primary-clr') == '#ffcc99') {
+                    body.style.setProperty('--primary-clr','#ffb56b')
+                    body.style.setProperty('--secondary-clr','#27282c')
+                } else {
+                    body.style.setProperty('--primary-clr','#ffcc99')
+                    body.style.setProperty('--secondary-clr','#fff')
+                }
+            }
+        </script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    </body>
+</html>
